@@ -1,0 +1,24 @@
+body {
+    background-color: #2222FF;
+}
+
+div#result ul {
+    margin-top: 20px;
+}
+
+div#result ul li {
+    display: block;
+    margin: -5px 20px 5px -20px;
+    padding-bottom: 5px;
+    height: 30px;
+    list-style-type: none;
+    font-size: 150%;
+    color: #FFFFFF;
+    text-shadow: 2px 2px #000000;
+    cursor: pointer;
+}
+
+div#result ul li:hover {
+    color: yellow;
+    text-shadow: 2px 2px #000000;
+}
