@@ -1,5 +1,5 @@
 body {
-    background-color: #2222FF;
+    background: linear-gradient(to right, #C0F0F0 0%,#7DB9E8 100%);
 }
 
 div#result ul {
@@ -12,13 +12,14 @@ div#result ul li {
     padding-bottom: 5px;
     height: 30px;
     list-style-type: none;
-    font-size: 150%;
-    color: #FFFFFF;
-    text-shadow: 2px 2px #000000;
+    font-size: 130%;
+    color: #000000;
+    font-weight: bold;
     cursor: pointer;
 }
 
 div#result ul li:hover {
-    color: yellow;
-    text-shadow: 2px 2px #000000;
+    color: #0000FF;
+    text-shadow: none;
+    font-weight: bold;
 }

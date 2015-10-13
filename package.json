@@ -1,7 +1,7 @@
 {
   "title": "Site Switcher",
   "name": "site-switcher",
-  "version": "1.1.0-beta1",
+  "version": "1.1.0",
   "description": "Easily switch across live, stage & local site",
   "main": "lib/index.js",
   "author": "Markus Popp",
