@@ -1,0 +1,40 @@
+{
+
+  "description": "Easily switch across live, stage & local site",
+  "manifest_version": 2,
+  "name": "Site Switcher",
+  "version": "1.99.0",
+
+  "permissions": [
+      "tabs",
+      "<all_urls>"
+],
+
+  "background": {
+    "scripts": ["main.js"]
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/site-switcher-active-16.png",
+      "32": "icons/site-switcher-active-32.png",
+      "64": "icons/site-switcher-active-64.png"
+    }
+  },
+
+  "icons": {
+    "32": "icons/site-switcher-active-32.png",
+    "64": "icons/site-switcher-active-64.png"
+  },
+
+  "options_ui": {
+    "page": "options/options.html"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "site-switcher@mozilla.org",
+      "strict_min_version": "52.0"
+    }
+  }
+}
