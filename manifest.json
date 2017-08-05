@@ -6,9 +6,10 @@
   "version": "1.99.0",
 
   "permissions": [
+      "storage",
       "tabs",
       "<all_urls>"
-],
+  ],
 
   "background": {
     "scripts": ["main.js"]
@@ -19,7 +20,9 @@
       "16": "icons/site-switcher-active-16.png",
       "32": "icons/site-switcher-active-32.png",
       "64": "icons/site-switcher-active-64.png"
-    }
+    },
+    "default_title": "Site Switcher",
+    "default_popup": "popup/info-panel.html"
   },
 
   "icons": {
@@ -28,7 +31,8 @@
   },
 
   "options_ui": {
-    "page": "options/options.html"
+    "page": "options/options.html",
+    "browser_style": true
   },
 
   "applications": {

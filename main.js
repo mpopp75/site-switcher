@@ -1,16 +1,11 @@
 var currentTab;
 
-function buttonClicked() {
-    console.log(currentTab.url);
-}
-
-browser.browserAction.onClicked.addListener(buttonClicked);
-
 function updateActiveTab(tabs) {
 
   function updateTab(tabs) {
     if (tabs[0]) {
       currentTab = tabs[0];
+      console.log(currentTab.url);
     }
   }
 
