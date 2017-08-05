@@ -3,7 +3,7 @@
   "description": "Easily switch across live, stage & local site",
   "manifest_version": 2,
   "name": "Site Switcher",
-  "version": "1.99.0",
+  "version": "2.0.0",
 
   "permissions": [
       "storage",
@@ -17,17 +17,17 @@
 
   "browser_action": {
     "default_icon": {
-      "16": "icons/site-switcher-active-16.png",
-      "32": "icons/site-switcher-active-32.png",
-      "64": "icons/site-switcher-active-64.png"
+      "16": "icons/site-switcher-16.png",
+      "32": "icons/site-switcher-32.png",
+      "64": "icons/site-switcher-64.png"
     },
     "default_title": "Site Switcher",
     "default_popup": "popup/info-panel.html"
   },
 
   "icons": {
-    "32": "icons/site-switcher-active-32.png",
-    "64": "icons/site-switcher-active-64.png"
+    "32": "icons/site-switcher-32.png",
+    "64": "icons/site-switcher-64.png"
   },
 
   "options_ui": {

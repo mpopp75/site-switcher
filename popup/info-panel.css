@@ -1,4 +1,23 @@
 body {
     font-family: Helvetica,Arial,sans-serif;
     font-size: 14px;
+    background: linear-gradient(to right, #C0F0F0 0%,#7DB9E8 100%);
+}
+
+div#output ul li {
+    display: block;
+    margin: -5px 20px 5px -20px;
+    padding-top: 5px;
+    height: 250%;
+    list-style-type: none;
+    font-size: 130%;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+div#output ul li:hover {
+    color: #0000FF;
+    text-shadow: none;
+    font-weight: bold;
 }
