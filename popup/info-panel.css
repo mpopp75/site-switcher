@@ -1,23 +1,26 @@
 body {
-    font-family: Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    background: linear-gradient(to right, #C0F0F0 0%,#7DB9E8 100%);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    background-color: #CCCCCC;
+}
+
+div#output {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+div#output ul {
+  position: relative;
+  top: -10px;
 }
 
 div#output ul li {
     display: block;
-    margin: -5px 20px 5px -20px;
-    padding-top: 5px;
-    height: 250%;
-    list-style-type: none;
-    font-size: 130%;
-    color: #000000;
-    font-weight: bold;
+    margin: 0 20px 0 -10px;
+    padding-top: 15px;
     cursor: pointer;
 }
 
 div#output ul li:hover {
-    color: #0000FF;
-    text-shadow: none;
-    font-weight: bold;
+    text-decoration: underline;
 }
