@@ -32,33 +32,47 @@ function onError(error) {
 function setupPanel() {
     sites = JSON.parse(sitesJson);
 
-    var resultHtml = "<ul>\n";
+    // clear Panel if items exist
+    try {
+      document.querySelector("#output").removeChild(document.querySelector("#sites"));
+    } catch (e) {}
 
+    var ul = document.createElement("ul");
+    ul.setAttribute("id", "sites");
+
+    var para = [];
     for (var i = 0; i < sites.length; i++) {
         for (var j = 0; j < sites[i].length; j++) {
             if (currentTab.indexOf(sites[i][j]) === 0) {
-                resultHtml += foundSite(sites[i], j, currentTab);
+                para = foundSite(sites[i], j, currentTab);
             }
         }
     }
-    resultHtml += "</ul>\n";
 
-    document.querySelector("#output").innerHTML = resultHtml;
+    for (var k = 0; k < para.length; k++) {
+      ul.appendChild(para[k]);
+    }
+
+    document.querySelector("#output").appendChild(ul);
 }
 
 // we found the correct set of sites[], now generate links for
 // all elements, except the current URL itself (i.e. k !== j)
 function foundSite(sites, j, currentTab) {
-    var resultHtml = "";
+    var para = [null];
 
+    var e = 0;
     for (var k = 0; k < sites.length; k++) {
         var newUrl = currentTab.replace(sites[j], sites[k]);
         if (k !== j) {
-            resultHtml += "  <li data-url=\"" + newUrl + "\">" + sites[k] + "</li>\n";
+            para[e] = document.createElement("li");
+            para[e].setAttribute("data-url", newUrl);
+            para[e].appendChild(document.createTextNode(sites[k]));
+            e++;
         }
     }
 
-    return resultHtml;
+    return para;
 }
 
 // Listen for clicks in the panel, open URL in tab
