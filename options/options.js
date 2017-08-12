@@ -1,5 +1,4 @@
 function saveOptions(e) {
-  // e.preventDefault();
   browser.storage.local.set({
     sites: document.querySelector("#sites").value
   });
