@@ -3,7 +3,7 @@
   "description": "Easily switch across live, stage & local site",
   "manifest_version": 2,
   "name": "Site Switcher",
-  "version": "2.0.5",
+  "version": "2.0.6",
 
   "permissions": [
       "storage",
@@ -38,7 +38,7 @@
   "applications": {
     "gecko": {
       "id": "@site-switcher",
-      "strict_min_version": "78.0"
+      "strict_min_version": "102.0"
     }
   }
 }
