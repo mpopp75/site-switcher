@@ -52,9 +52,9 @@ function siteInJson() {
   }
 
   if (found === false) {
-    browser.browserAction.disable();
+    browser.action.disable();
   } else {
-    browser.browserAction.enable();
+    browser.action.enable();
   }
 }
 

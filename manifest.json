@@ -1,41 +1,55 @@
 {
-
-  "description": "Easily switch across live, stage & local site",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Site Switcher",
+  "description": "Easily switch across live, stage & local site",
   "version": "2.0.6",
-
-  "permissions": [
-      "storage",
-      "tabs",
-      "<all_urls>"
-  ],
-
-  "background": {
-    "scripts": ["main.js"]
+  "developer": {
+    "name": "Markus Popp",
+    "url": "https://github.com/mpopp75/site-switcher"
   },
-
-  "browser_action": {
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "main.js"
+    ]
+  },
+  "action": {
     "default_icon": {
       "16": "icons/site-switcher-16.png",
       "32": "icons/site-switcher-32.png",
       "64": "icons/site-switcher-64.png"
     },
     "default_title": "Site Switcher",
-    "default_popup": "popup/info-panel.html"
+    "default_popup": "popup/info-panel.html",
+    "theme_icons": [
+      {
+        "light": "icons/site-switcher-16.png",
+        "dark": "icons/site-switcher-dark-16.png",
+        "size": 16
+      },
+      {
+        "light": "icons/site-switcher-32.png",
+        "dark": "icons/site-switcher-dark-32.png",
+        "size": 32
+      },
+      {
+        "light": "icons/site-switcher-64.png",
+        "dark": "icons/site-switcher-dark-64.png",
+        "size": 64
+      }
+    ]
   },
-
-  "icons": {
-    "32": "icons/site-switcher-32.png",
-    "64": "icons/site-switcher-64.png"
-  },
-
   "options_ui": {
     "page": "options/options.html",
     "browser_style": true
   },
-
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
       "id": "@site-switcher",
       "strict_min_version": "102.0"
