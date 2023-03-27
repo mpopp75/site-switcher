@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Site Switcher",
   "description": "Easily switch across live, stage & local site",
-  "version": "2.0.6",
+  "version": "2.1.0",
   "developer": {
     "name": "Markus Popp",
     "url": "https://github.com/mpopp75/site-switcher"
@@ -52,7 +52,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "@site-switcher",
-      "strict_min_version": "102.0"
+      "strict_min_version": "111.0"
     }
   }
 }
